@@ -8,9 +8,10 @@
 body {
     height: 90vh;
     font-family: 'Open Sans', sans-serif;
+    background-color: #000;
 }
 
-header {
+.headerRick {
     height: 10vh;
     display: flex;
     align-items: center;
@@ -18,7 +19,6 @@ header {
     padding: 15px;
     background-color: #000;
 }
-
 .fundo {
     width: 100%;
     background-color: #000000a1;
@@ -30,14 +30,12 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
 .fundo h1 {
     font-size: 2rem;
 }
 
 .fundo h3 {
-    margin-bottom: 2em;
-
+    margin-bottom: 1em;
 }
 
 header img {
@@ -54,8 +52,19 @@ header img {
     border-bottom: 10vh #000;
 }
 
+button a{
+    color: white;
+    text-decoration: none;
 
+}
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
+button a:visited {
+    color: white;
 
+}
 
 .glow-on-hover {
     font-family: 'Open Sans', sans-serif;
@@ -132,11 +141,29 @@ header img {
     .fundo h1 {
         font-size: 1.5rem;
     }
+    header {
+        height: 7vh;
+    }
+    header img {
+        height: 7vh;
+        border: 3px solid #6938ca;
+
+    }
 }
 
 @media screen and (max-width: 370px) {
     .fundo h1 {
-        font-size: 1rem;
+        font-size: 1.5em;
+    }
+    .fundo h3 {
+        font-size: 1em;
+    }
+    header img {
+        height: 5vh;
+        border: 2px solid #6938ca;
+    }
+    header {
+        height: 5vh;
     }
     .glow-on-hover {
         width: 160px;
