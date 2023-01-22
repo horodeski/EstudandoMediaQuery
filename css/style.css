@@ -1,0 +1,122 @@
+h1 {
+    color: red;
+}
+
+.classeBonita {
+    margin: 0 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teste {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 2 - Sintaxe, apenas para telas, breakpoint */
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+
+    .teste {
+        display: block;
+    }
+
+    .oCowboyVaiTePegar {
+        display: none;
+    }
+
+    .classeBonita {
+        margin: 10px 0;
+    }
+}
+
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media (max-width: 700px) {
+    h2 {
+        color: purple;
+    }
+}
+
+@media (min-width: 200px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    h3 {
+        font-size: 3em;
+    }
+}
+
+@media (orientation: landscape) {
+    h3 {
+        color: brown;
+    }
+}
+@media (max-width: 200px), (orientation: landscape) {
+    h3 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 600px) {
+    h4 {
+        color: red;
+    }
+}
+
+h4 {
+    color: blue;
+}
+
+h5 {
+    font-size: 3em;
+}
+
+h5 {
+    color: aqua;
+}
+
+@media (min-width: 480px) {
+    h5 {
+        color: burlywood;
+    }
+}
+
+@media (min-width: 768px) {
+    h5 {
+        color: cadetblue;
+    }
+}
+
+@media (min-width: 1024px) {
+    h5 {
+        color: coral;
+    }
+}
+
+@media (min-width: 1200px) {
+    h5 {
+        color: darkorchid;
+    }
+}
