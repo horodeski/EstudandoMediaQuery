@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 90vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #000;
+}
+
+.fundo {
+    width: 100%;
+    background-color: #000000a1;
+    font-weight: 800;
+    color: white;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo h1 {
+    font-size: 2rem;
+}
+
+.fundo h3 {
+    margin-bottom: 2em;
+
+}
+
+header img {
+    height: 10vh;
+    border-radius: 50%;
+    border: 5px solid #6938ca;
+}
+
+.divBonita {
+    background: url(/img/tumblr_c8b014c55031dab307ee51b75fda6170_4c501217_540.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    border-bottom: 10vh #000;
+}
+
+
+
+
+.glow-on-hover {
+    font-family: 'Open Sans', sans-serif;
+    width: 259px;
+    height: 61px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #2f15ed, #502ef1, #7147f6, #9360fa, #b479ff, #8455ff, #7348f6, #623bec, #512ee3);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .fundo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .fundo h1 {
+        font-size: 1rem;
+    }
+    .glow-on-hover {
+        width: 160px;
+        height: 75px;
+    }
+}
